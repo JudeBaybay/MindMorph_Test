@@ -68,3 +68,5 @@ def create_learningstyle(id: int, learning: updatelearningstyleSchema):
 
     if not learning.data:
         return {"message": "No record found or update failed"}
+    
+    return {"message": "Learning style updated successfully", "data": learning.data}
